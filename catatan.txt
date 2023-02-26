@@ -1,0 +1,18 @@
+tgl 26 Feb
+github,
+
+
+buat controller
+php artisan make:controller CityController -r -m City
+-r -> resource -> C --> post(ngrim)
+                > R --> get(ambil)
+                > U --> put(narok)
+                > D --> delete(menghapus)
+
+                    Fungsi Controller
+            create = create() -> store()
+            read   = index()
+            update = edit() -> update()
+            delete = destroy()
+
+Route::get('/city', [CityController::class, 'index']);
